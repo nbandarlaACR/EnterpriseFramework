@@ -17,6 +17,7 @@ using Enterprise.Framework.Constants;
 
 namespace Enterprise.Framework.Hooks
 {
+
     [Binding]
     public class DriverSetup
     {
