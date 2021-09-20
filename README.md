@@ -1,20 +1,59 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# **EnterpriseFrameworkCsharp**
+Test Automation framework using C# and Selenium
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## **How to Clone Framework**
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+```
+git clone https://github.com/nbandarlaACR/EnterpriseFrameworkCsharp.git
+```
+## **How to Rename Framework Floders**
+1. Rename .csproj name to the desired name 
+   - Example : ProjectFramework.csproj to ABCProject.csproj
+2. Rename Project Folder name to a new desired name
+   - Example : ProjectFramework to ABCProject
+3. Open EnterPriseFramework.sln with notepad and change the relevant project names with new desired project name
+   - Please find below screenshots for reference to  replace ProjectFramework occcurances with new name
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+###### **From**
+![This is an image](/images/old_proj_name.png)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+###### **To**
+![This is an image](/images/new_proj_name.png)
+
+## **How Add Browser Configurations**
+1. Open Solution Configurations and select Configuration Manager
+2. Add New Configurtions in ProjectFramework Configuration dropdown
+3. Add New Configurations in the Active Solution Configuration
+
+![This is an image](/images/configurations.png)
+
+## **How to Run the script**
+1. Provide Application URL in the appsettings.Chrome_Preprod.json
+2. Select the Chrome_Preprod from the solution Explorer
+3. Open Test Explorer
+4. Select the Test case
+5. Run
+
+## **How to view Test Results**
+> When the test execution is completed to view the test results, perform the below steps in the terminal window
+
+```
+cd <ProjectFrameworkDirectory>/TestResults
+
+livingdoc test-assembly <ProjectFrameworkDirectory>\bin\Chrome_Preprod\netcoreapp.3.1\<ProjectName>.dll -t <ProjectFrameworkDirectory>\bin\Chrome_Preprod\netcoreapp.3.1\TestExecution.json
+```
+
+###### Example
+```
+cd C:\SourceCode\main_repo\EnterpriseFrameworkCsharp\ProjectFramework\TestResults
+
+livingdoc test-assembly C:\SourceCode\main_repo\EnterpriseFrameworkCsharp\ProjectFramework\bin\Chrome_Preprod\netcoreapp3.1\ProjectFramework.dll -t C:\SourceCode\main_repo\EnterpriseFrameworkCsharp\ProjectFramework\bin\Chrome_Preprod\netcoreapp3.1\TestExecution.json
+```
+> Test Results will be generated with failed screenshots under the below path with the name Livindoc.html
+```
+  <ProjectFrameworkDirectory>/TestResults
+```
+
+
+###### Example Reports
+![Example Reports](/images/example-reports.png)
