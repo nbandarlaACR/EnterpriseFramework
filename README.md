@@ -58,18 +58,19 @@ livingdoc test-assembly C:\SourceCode\main_repo\EnterpriseFrameworkCsharp\Projec
 ###### Example Reports
 ![Example Reports](/images/example-reports.png)
 
-###### How to Build project and generate dll file ?
-Once the code checkout is completed, clean the code and build the framework. 
-Righ click on the solution to see clean and build options
-Once the build is successful then a .dll file will be generated under the path
-Example :  C:\SourceCode\core_repos_narsi\EnterpriseFramework\EnterpriseFramework\bin\Release\netcoreapp3.1\EnterpriseFramework.dll
-copy the dll file and add as project reference in the Automation Framework repository
+## ** How to Build project and generate dll file ? **
+1. Once the code checkout is completed, clean the code and build the framework. 
+2. Righ click on the solution to see clean and build options
+3. Once the build is successful then a .dll file will be generated under the path
+   Example :  C:\SourceCode\core_repos_narsi\EnterpriseFramework\EnterpriseFramework\bin\Release\netcoreapp3.1\EnterpriseFramework.dll
+4. copy the dll file and add as project reference in the Automation Framework repository
 
-###### How to add EnterpriseFrameowk.dll file to the ProjectFrameowk ?
-Right click on the Project Framework
-Locate Add button
-Select Add Project Reference option
-Select Browse option
-Locate the EnterpriseFramework.dll from the below path 
-Ex :C:\SourceCode\core_repos_narsi\EnterpriseFramework\EnterpriseFramework\bin\Release\netcoreapp3.1\EnterpriseFramework.dll
-Clean and build ProjectFramework
+
+## ** How to add EnterpriseFrameowk.dll file to the ProjectFrameowk ? **
+1. Right click on the Project Framework
+2. Locate Add button
+3. Select Add Project Reference option
+4. Select Browse option
+5. Locate the EnterpriseFramework.dll from the below path 
+   Ex :C:\SourceCode\core_repos_narsi\EnterpriseFramework\EnterpriseFramework\bin\Release\netcoreapp3.1\EnterpriseFramework.dll
+6. Clean and build ProjectFramework
